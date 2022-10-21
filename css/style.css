@@ -41,5 +41,33 @@ body{
     vertical-align: middle;
     margin: 0 10px;
 }
+.toLeft{
+    left: 21%;
+    z-index: 600;
+    top: 30%;
+}
+
+.toRight{
+    right: 21%;
+    z-index: 500;
+    top: 30%;
+}
+
+.fa-chevron-right{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.fa-chevron-left:hover{
+    font-size: 1.5rem;
+    color: rgb(97, 228, 9);
+}
+.fa-chevron-right, .fa-chevron-left{
+    font-size: 1.5rem;
+    color: white;
+}
+.fa-chevron-left{
+    transition: all 6s linear;
+}
 
 
