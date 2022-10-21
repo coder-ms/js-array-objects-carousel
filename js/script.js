@@ -27,3 +27,22 @@ const countryPhotos = [
         description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam.'
     },
 ];
+
+const displayImages = function(countryInfo){
+    const showHTML = document.getElementById('show');
+    const col = document.createElement('div');
+    col.className = 'landscape-wrapper d-none';
+
+    const structure = `
+    <div class="container-info">
+        <img class="countries" src="${countryInfo.url}" alt="${countryInfo.title}">
+        <div class="info">
+            <h2>${countryInfo.title}</h2>
+            <h6">${countryInfo.description}</h6>
+        </div>       
+    </div>     
+    `;
+    col.innerHTML += structure;
+
+    showHTML.append(col);
+}

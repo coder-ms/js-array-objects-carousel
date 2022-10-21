@@ -14,5 +14,32 @@ body{
     width: 100%;
     height: 576px;
 }
+.countries{
+    width: 100%;
+    height: 100%;
+    animation: fade 7s ease-in-out;
+}
+
+.info{
+    top: 0;
+    width: 60%;
+    text-align: right;
+    padding: 20px;
+    color: white;
+    position: absolute;
+}
+
+.show{
+    background-color: white;
+}
+
+.country::after, .country::before{
+    content: '';
+    height: 2px;
+    background-color: white;
+    width: 30%;
+    vertical-align: middle;
+    margin: 0 10px;
+}
 
 
