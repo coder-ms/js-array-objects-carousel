@@ -46,3 +46,23 @@ const displayImages = function(countryInfo){
 
     showHTML.append(col);
 }
+
+countryPhotos.forEach(displayImages);
+
+function displayLand(){
+    let sliderActive = 0;
+    let sliderLandscape = document.querySelectorAll('.landscape-wrapper');
+    sliderLandscape[sliderActive].classList.toggle('d-none');
+    const slideshow = setInterval(function(){
+        sliderLandscape[sliderActive].classList.toggle('d-none');
+        sliderActive++;
+        if(sliderActive == sliderLandscape.length){
+            sliderActive = 0;
+        }
+        sliderLandscape[sliderActive].classList.toggle('d-none');
+    }, 7000);
+
+
+}
+
+displayLand();
