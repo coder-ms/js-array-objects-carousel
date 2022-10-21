@@ -41,6 +41,23 @@ body{
     vertical-align: middle;
     margin: 0 10px;
 }
+
+.toggle-land{
+    height: 100px;
+    width: 100px;
+    top: 50%;
+    text-align: center;
+    line-height: 100px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 6s linear;
+}
+
+.toggle-land:hover{
+    background-color: rgba(6, 22, 240, 0.7);
+}
+
 .toLeft{
     left: 21%;
     z-index: 600;
