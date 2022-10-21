@@ -61,7 +61,27 @@ function displayLand(){
         }
         sliderLandscape[sliderActive].classList.toggle('d-none');
     }, 7000);
+    const buttonPrevious = document.querySelector('.toggle-land.toLeft');
+    buttonPrevious.addEventListener('click', previousPhoto);
+    function previousPhoto(){
+        sliderLandscape[sliderActive].classList.toggle('d-none');
+        sliderActive--;
+        if(sliderActive < 0){
+            sliderActive = sliderLandscape.length - 1;
+        }
+        sliderLandscape[sliderActive].classList.toggle('d-none');
+    }
 
+    const buttonNext = document.querySelector('.toggle-land.toRight');
+    buttonNext.addEventListener('click', nextPhoto);
+    function nextPhoto(){
+        sliderLandscape[sliderActive].classList.toggle('d-none');
+        sliderActive++;
+        if(sliderActive == sliderLandscape.length){
+            sliderActive = 0;
+        }
+        sliderLandscape[sliderActive].classList.toggle('d-none');
+    }
 
 }
 
